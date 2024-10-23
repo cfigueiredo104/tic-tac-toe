@@ -1,0 +1,27 @@
+Objetivo do Jogo
+
+O objetivo do jogo é ser o primeiro a alinhar três símbolos iguais em uma linha, seja horizontal, vertical ou diagonal. Os jogadores alternam turnos, escolhendo onde colocar seu símbolo.
+Componentes do Jogo
+
+    Tabuleiro: O tabuleiro é uma grade 3x3, composta por 9 casas onde os jogadores podem colocar seus símbolos. As casas são geralmente representadas por espaços vazios inicialmente.
+    Símbolos: Um jogador usa o símbolo "X" e o outro usa "O".
+
+Regras do Jogo
+
+    Início do Jogo: O jogo começa com um tabuleiro vazio. Um jogador é escolhido para começar (normalmente o jogador "X").
+
+    Turnos:
+        Cada jogador, em seu turno, escolhe uma casa vazia para colocar seu símbolo.
+        O jogador deve indicar a linha e a coluna da casa desejada. Por exemplo, para a casa no canto superior esquerdo, o jogador escolheria a linha 0 e a coluna 0.
+
+    Verificação de Vitória:
+        Após cada jogada, o jogo verifica se o jogador atual venceu. Um jogador vence se conseguir alinhar três de seus símbolos em uma das seguintes formas:
+            Horizontal: Três símbolos na mesma linha.
+            Vertical: Três símbolos na mesma coluna.
+            Diagonal: Três símbolos em uma das duas diagonais.
+
+    Empate:
+        Se todas as casas forem preenchidas e nenhum jogador tiver alinhado três símbolos, o jogo termina em empate.
+
+    Repetição de Jogadas:
+        Se um jogador tentar colocar seu símbolo em uma casa já ocupada, ele deve escolher outra casa.
