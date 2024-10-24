@@ -22,8 +22,8 @@
   
         - name: Build Docker image
           run: |
-            docker build -t cfigueiredo104/your-image-name:latest .
+            docker build -t cfigueiredo104/formacaoteste:1.0 .
   
         - name: Push Docker image
           run: |
-            docker push cfigueiredo104/your-image-name:latest
+            docker push cfigueiredo104/formacaoteste:1.0
