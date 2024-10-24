@@ -26,18 +26,27 @@ def tic_tac_toe():
     current_player = "X"
     for turn in range(9):
         print_board(board)
-        row = int(input(f"Jogador {current_player}, escolha a linha (0-2): "))
-        col = int(input(f"Jogador {current_player}, escolha a coluna (0-2): "))
-        if board[row][col] == " ":
-            board[row][col] = current_player
-            if check_winner(board):
-                print_board(board)
-                print(f"Jogador {current_player} venceu!")
-                return
-            current_player = "O" if current_player == "X" else "X"
-        else:
-            print("Casa já ocupada! Tente novamente.")
-            
+        while True:
+            try:
+                row = int(input(f"Jogador {current_player}, escolha a linha (0-2): "))
+                col = int(input(f"Jogador {current_player}, escolha a coluna (0-2): "))
+                if row in [0, 1, 2] and col in [0, 1, 2]:
+                    if board[row][col] == " ":
+                        board[row][col] = current_player
+                        break
+                    else:
+                        print("Casa já ocupada! Tente novamente.")
+                else:
+                    print("Entrada inválida! Por favor, escolha um número entre 0 e 2.")
+            except ValueError:
+                print("Entrada inválida! Por favor, insira um número.")
+
+        if check_winner(board):
+            print_board(board)
+            print(f"Jogador {current_player} venceu!")
+            return
+        current_player = "O" if current_player == "X" else "X"
+
     print_board(board)
     print("Empate!")
 
