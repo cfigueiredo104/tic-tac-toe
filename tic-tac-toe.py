@@ -1,9 +1,11 @@
 # Jogo do Galo (Tic Tac Toe)
 
+
 def print_board(board):
     for row in board:
         print(" | ".join(row))
         print("-" * 9)
+
 
 def check_winner(board):
     # Verificar linhas, colunas e diagonais
@@ -17,6 +19,7 @@ def check_winner(board):
     if board[0][2] == board[1][1] == board[2][0] != " ":
         return True
     return False
+
 
 def tic_tac_toe():
     board = [[" " for _ in range(3)] for _ in range(3)]
@@ -36,9 +39,10 @@ def tic_tac_toe():
             current_player = "O" if current_player == "X" else "X"
         else:
             print("Casa já ocupada! Tente novamente.")
-    
+            
     print_board(board)
     print("Empate!")
+
 
 if __name__ == "__main__":
     tic_tac_toe()
