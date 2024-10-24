@@ -23,7 +23,7 @@ def check_winner(board):
 
 def tic_tac_toe():
     board = [[" " for _ in range(3)] for _ in range(3)]
-    current_player = "X"   
+    current_player = "X"
     for turn in range(9):
         print_board(board)
         row = int(input(f"Jogador {current_player}, escolha a linha (0-2): "))
@@ -36,9 +36,11 @@ def tic_tac_toe():
                 return
             current_player = "O" if current_player == "X" else "X"
         else:
-            print("Casa já ocupada! Tente novamente.")        
+            print("Casa já ocupada! Tente novamente.")
+            
     print_board(board)
     print("Empate!")
+
 
 if __name__ == "__main__":
     tic_tac_toe()
