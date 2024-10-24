@@ -1,7 +1,7 @@
 # tic-tac-toe
 
 
-Nome: 
+Nome:
 Jogo do galo ou jogo do tic-tac-toe
 
 
