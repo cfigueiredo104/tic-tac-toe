@@ -25,3 +25,5 @@ Regras do Jogo
 
     Repetição de Jogadas:
         Se um jogador tentar colocar seu símbolo em uma casa já ocupada, ele deve escolher outra casa.
+
+dghfhj
